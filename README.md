@@ -6,14 +6,14 @@ This project identifies the top performing investable US stocks for 2025 by anal
 
 ### Enhanced Features
 
-- **Universe**: Analyzes 600+ tickers from multiple sources (S&P 500, NASDAQ 100, Russell 1000, high-volume SEC tickers)
+- **Universe**: Analyzes 6000+ tickers from multiple sources (S&P 500, NASDAQ 100, Russell 1000, high-volume SEC tickers)
 - **Multi-Tier Selection**: Intelligent pre-filtering to focus on liquid, investable stocks
 - **Robust Processing**: Enhanced batching, checkpointing, and error recovery for large datasets
 - **Comprehensive Ranking**: Composite score (70% return, 30% liquidity) to balance performance and tradability
 
 ## Ticker Selection Strategy
 
-The pipeline uses a **multi-tier approach** to select 600+ high-quality tickers:
+The pipeline uses a **multi-tier approach** to select 6000+ high-quality tickers:
 
 ### Tier 1: Major Index Constituents (~5000 tickers)
 - **S&P 500**: Large-cap US stocks representing ~80% of US market cap
@@ -60,7 +60,7 @@ For stocks that didn't exist in 2024, downloads full 2025 history to:
 
 ## Enhanced Market Analysis Pipeline
 
-The pipeline efficiently processes 6000+ tickers using a proven 4-phase approach with enhanced scalability:
+The pipeline efficiently processes 60000+ tickers using a proven 4-phase approach with enhanced scalability:
 
 ### Pipeline Overview
 
@@ -127,10 +127,10 @@ The analysis generates multiple output files for thorough review:
    - Final ranked performers by composite score
    - Includes: Symbol, Return, Start/End Price, Liquidity Metrics, Composite Score
    
-2. **Full 600+ Analysis** (`reports/top_600_analysis_2025.xlsx`)
+2. **Full 6000+ Analysis** (`reports/top_6000_analysis_2025.xlsx`)
    - Multi-sheet Excel workbook with:
      - **Top 100**: Final ranked list with all metrics
-     - **Full 600**: All processed tickers and their performance
+     - **Full 6000**: All processed tickers and their performance
      - **Sector Breakdown**: Performance distribution by sector
      - **Source Comparison**: Returns by ticker source (S&P 500, NASDAQ 100, etc.)
      - **Methodology**: Documentation of selection and ranking approach
@@ -139,7 +139,7 @@ The analysis generates multiple output files for thorough review:
 
 The dashboard includes:
 - **Top 30 Performers**: Bar chart with color-coded liquidity scores
-- **Return Distribution**: Histogram of returns across all 600+ tickers
+- **Return Distribution**: Histogram of returns across all 6000+ tickers
 - **Liquidity vs Return**: Scatter plot showing the tradeoff frontier
 - **Sector Performance**: Box plots by industry sector
 - **IPO vs Established**: Separate analysis of 2025 IPOs vs existing stocks
